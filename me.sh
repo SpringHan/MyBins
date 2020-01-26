@@ -1,9 +1,12 @@
 #!/bin/bash
+# Make Enveronment
 
-if [[ ! -d "./bin" ]]; then
-	mkdir ./bin
-fi
+if [[ $# == 0 ]]; then
+	if [[ ! -d "./bin" ]]; then
+		mkdir ./bin
+	fi
 
-if [[ ! -d "./src" ]]; then
-	mkdir ./src
+	if [[ ! -d "./src" ]]; then
+		mkdir ./src
+	fi
 fi
