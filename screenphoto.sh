@@ -9,7 +9,12 @@ do
 	then
 		a=`expr ${a} + 1`
 	else
-		scrot -d 1 -o /home/spring/${a}.png
-		i=0
+		if [ $1 == 0 ]; then
+			scrot -d 1 -o /home/spring/${a}.png
+			i=0
+		elif [ $1 == 1 ]; then
+			scrot -s -o /home/spring/${a}.png
+			i=0
+		fi
 	fi
 done
