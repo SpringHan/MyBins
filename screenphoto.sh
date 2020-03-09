@@ -9,7 +9,7 @@ do
 	then
 		a=`expr ${a} + 1`
 	else
-		scrot -d 1 -q 80 -o /home/spring/${a}.png
+		scrot -d 1 -q 90 -o /home/spring/${a}.png
 		i=0
 	fi
 done
