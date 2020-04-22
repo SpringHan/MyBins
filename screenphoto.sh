@@ -5,7 +5,7 @@ i=1
 
 while [ ${i} == 1 ]
 do
-	if [ -e "/home/spring/Pictures/"${a}".png" ]
+	if [ -e "/home/spring/Pictures/${a}.png" ]
 	then
 		a=`expr ${a} + 1`
 	else
